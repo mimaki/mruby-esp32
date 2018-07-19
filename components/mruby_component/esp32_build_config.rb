@@ -57,6 +57,6 @@ MRuby::CrossBuild.new('esp32') do |conf|
 
   conf.gem :core => "mruby-print"
   conf.gem :core => "mruby-compiler"
-  conf.gem :github => "mruby-esp32/mruby-esp32-system"
-  conf.gem :github => "mruby-esp32/mruby-esp32-wifi"
+  conf.gem :github => "mimaki/mruby-esp32-system", :branch => 'add_include_paths'
+  conf.gem :github => "mimaki/mruby-esp32-wifi", :branch => 'add_include_paths'
 end
